@@ -1,6 +1,7 @@
 import React from 'react';
 import Card1 from './ResourceCard'; // Adjust the import path based on your file structure
 
+// Resource data including Wikipedia URLs
 const resourceData = [
   {
     id: 'adhd',
@@ -9,7 +10,8 @@ const resourceData = [
     types: 'Inattentive Type, Hyperactive-Impulsive Type, Combined Type.',
     symptoms: 'Difficulty sustaining attention, forgetfulness, fidgeting, excessive talking, interrupting others.',
     treatment: 'Behavioral therapy, medication (stimulants, non-stimulants), lifestyle changes, educational support.',
-     imageUrl: '/download (8).jpeg'
+    imageUrl: '/download (8).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder'
   },
   {
     id: 'addiction',
@@ -18,7 +20,8 @@ const resourceData = [
     types: 'Substance Use Disorders, Behavioral Addictions.',
     symptoms: 'Craving, loss of control, tolerance, withdrawal symptoms, neglect of responsibilities.',
     treatment: 'Behavioral therapy, medication, support groups, rehabilitation programs.',
-    imageUrl: '/download (10).jpeg'
+    imageUrl: '/download (10).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Addiction'
   },
   {
     id: 'stress',
@@ -27,7 +30,8 @@ const resourceData = [
     types: 'Acute Stress, Episodic Acute Stress, Chronic Stress.',
     symptoms: 'Headaches, muscle tension, fatigue, sleep disturbances, anxiety, irritability.',
     treatment: 'Stress management techniques, relaxation exercises, therapy, lifestyle changes.',
-    imageUrl: '/download (9).jpeg'
+    imageUrl: '/download (9).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Stress_(biology)'
   },
   {
     id: 'depression',
@@ -36,7 +40,8 @@ const resourceData = [
     types: 'Major Depressive Disorder, Persistent Depressive Disorder (Dysthymia), Bipolar Disorder.',
     symptoms: 'Feelings of sadness, hopelessness, fatigue, changes in appetite and sleep patterns, loss of interest in activities, difficulty concentrating.',
     treatment: 'Psychotherapy, medication (antidepressants), lifestyle changes, electroconvulsive therapy (ECT).',
-     imageUrl: '/download (2).jpeg'
+    imageUrl: '/download (2).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Depression_(mood)'
   },
   {
     id: 'anxiety',
@@ -45,9 +50,9 @@ const resourceData = [
     types: 'Generalized Anxiety Disorder (GAD), Panic Disorder, Social Anxiety Disorder, Specific Phobias.',
     symptoms: 'Restlessness, fatigue, difficulty concentrating, irritability, muscle tension, sleep disturbances.',
     treatment: 'Cognitive-behavioral therapy (CBT), medication (SSRIs, benzodiazepines), mindfulness, lifestyle changes.',
-    imageUrl: '/download (1).jpeg'
+    imageUrl: '/download (1).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Anxiety_disorder'
   },
-  
   {
     id: 'bipolar',
     title: 'Bipolar Disorder',
@@ -55,7 +60,8 @@ const resourceData = [
     types: 'Bipolar I Disorder, Bipolar II Disorder, Cyclothymic Disorder.',
     symptoms: 'Mood swings, high energy levels, reduced need for sleep, unusual talkativeness, racing thoughts (mania); fatigue, sadness, hopelessness (depression).',
     treatment: 'Medication (mood stabilizers, antipsychotics), psychotherapy, lifestyle changes, education and support.',
-     imageUrl: '/download (3).jpeg'
+    imageUrl: '/download (3).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Bipolar_disorder'
   },
   {
     id: 'eating-disorders',
@@ -64,7 +70,8 @@ const resourceData = [
     types: 'Anorexia Nervosa, Bulimia Nervosa, Binge-Eating Disorder.',
     symptoms: 'Extreme food restriction, binge eating, purging behaviors, excessive exercise, distorted body image.',
     treatment: 'Psychotherapy, nutritional counseling, medication, medical monitoring, support groups.',
-     imageUrl: '/download (7).jpeg'
+    imageUrl: '/download (7).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Eating_disorder'
   },
   {
     id: 'ptsd',
@@ -73,7 +80,8 @@ const resourceData = [
     types: 'Acute Stress Disorder, Complex PTSD.',
     symptoms: 'Flashbacks, nightmares, severe anxiety, uncontrollable thoughts about the event, avoidance of reminders.',
     treatment: 'Cognitive-behavioral therapy (CBT), medication (antidepressants), eye movement desensitization and reprocessing (EMDR), lifestyle changes.',
-     imageUrl: 'download (5).jpeg'
+    imageUrl: 'download (5).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder'
   },
   {
     id: 'ocd',
@@ -82,7 +90,8 @@ const resourceData = [
     types: 'Contamination, symmetry and ordering, intrusive thoughts, hoarding.',
     symptoms: 'Compulsive behavior, excessive cleaning, repeated checking, hoarding, intrusive thoughts.',
     treatment: 'Cognitive-behavioral therapy (CBT), medication (SSRIs), exposure and response prevention (ERP), lifestyle changes.',
-     imageUrl: 'download (6).jpeg'
+    imageUrl: 'download (6).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Obsessive–compulsive_disorder'
   },
   {
     id: 'schizophrenia',
@@ -91,7 +100,8 @@ const resourceData = [
     types: 'Paranoid Schizophrenia, Catatonic Schizophrenia, Disorganized Schizophrenia, Undifferentiated Schizophrenia.',
     symptoms: 'Delusions, hallucinations, disorganized thinking, abnormal motor behavior, negative symptoms (reduced ability to function normally).',
     treatment: 'Antipsychotic medications, psychotherapy, social skills training, family therapy.',
-   imageUrl: '/download (4).jpeg'
+    imageUrl: '/download (4).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Schizophrenia'
   },
   {
     id: 'personality-disorder',
@@ -100,7 +110,8 @@ const resourceData = [
     types: 'Borderline Personality Disorder, Antisocial Personality Disorder, Narcissistic Personality Disorder, Avoidant Personality Disorder.',
     symptoms: 'Difficulty perceiving and relating to situations and people, distorted self-image, extreme emotional responses, impulsivity.',
     treatment: 'Psychotherapy, medication, hospitalization in severe cases, support groups.',
-    imageUrl: '/download (11).jpeg'
+    imageUrl: '/download (11).jpeg',
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Personality_disorder'
   }
 ];
 
@@ -117,7 +128,8 @@ const Resources = () => {
             symptoms={resource.symptoms}
             treatment={resource.treatment}
             imageUrl={resource.imageUrl}
-            isEven={index % 2 === 0} // Add this to alternate cards
+            wikipediaUrl={resource.wikipediaUrl}
+            isEven={index % 2 === 0}
           />
         </div>
       ))}

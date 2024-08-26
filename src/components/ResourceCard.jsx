@@ -1,9 +1,13 @@
 import React from 'react';
-import './styles/ResourceCard.css'; // Ensure this CSS file includes styles for the cards
+import './styles/ResourceCard.css';
 
-const Card1 = ({ title, description, types, symptoms, treatment, imageUrl, isEven }) => {
+const Card1 = ({ title, description, types, symptoms, treatment, imageUrl, wikipediaUrl, isEven }) => {
+  const handleCardClick = () => {
+    window.open(wikipediaUrl, '_blank');
+  };
+
   return (
-    <div className={`card1 ${isEven ? 'even' : ''}`}>
+    <div className={`card1 ${isEven ? 'even' : ''}`} onClick={handleCardClick}>
       <img src={imageUrl} alt={title} className="card1-image" />
       <div className="card1-content">
         <h2>{title}</h2>

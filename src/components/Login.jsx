@@ -12,8 +12,8 @@ const Login = ({ setIsLoggedIn }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      alert('Login successful!');
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      localStorage.setItem('user', JSON.stringify(userCredential.user));
       setIsLoggedIn(true);
       navigate('/home');
     } catch (error) {

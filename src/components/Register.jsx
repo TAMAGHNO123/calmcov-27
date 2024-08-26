@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { auth, db } from '../firebase'; // Import Firebase and Firestore configuration
 import './styles/Auth.css';
 
-const Register = ({ setIsLoggedIn }) => {
+const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -26,12 +26,11 @@ const Register = ({ setIsLoggedIn }) => {
         // Add other profile fields as needed
       });
 
-      // Show success toast and redirect after 3 seconds
-      toast.success('Successfully registered!', {
+      // Show success toast and redirect to login after 3 seconds
+      toast.success('Successfully registered! Redirecting to login...', {
         onClose: () => {
-          setIsLoggedIn(true);
-          navigate('/home');
-        }, // Redirect to home page after toast closes
+          navigate('/login');
+        }, // Redirect to login page after toast closes
         autoClose: 3000, // 3 seconds
       });
     } catch (error) {
@@ -59,12 +58,11 @@ const Register = ({ setIsLoggedIn }) => {
         // Add other profile fields as needed
       });
 
-      // Show success toast and redirect after 3 seconds
-      toast.success('Successfully signed in with Google!', {
+      // Show success toast and redirect to login after 3 seconds
+      toast.success('Successfully signed in with Google! Redirecting to login...', {
         onClose: () => {
-          setIsLoggedIn(true);
-          navigate('/home');
-        }, // Redirect to home page after toast closes
+          navigate('/login');
+        }, // Redirect to login page after toast closes
         autoClose: 3000, // 3 seconds
       });
     } catch (error) {

@@ -7,9 +7,9 @@ const Footer = () => {
     <footer className="footer">
       <p>&copy; 2024 CalmCove. All rights reserved.</p>
       <p>Follow us on:
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a>,
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> Facebook</a>,
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>
+        <a href="https://x.com/calm_cove4you" target="_blank" rel="noopener noreferrer"> Twitter</a>,
+        <a href="https://www.facebook.com/profile.php?id=61564454926612" target="_blank" rel="noopener noreferrer"> Facebook</a>,
+        <a href="https://www.instagram.com/calmcov2024/" target="_blank" rel="noopener noreferrer"> Instagram</a>
       </p>
     </footer>
   );

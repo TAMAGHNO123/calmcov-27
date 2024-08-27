@@ -3,7 +3,7 @@ import './styles/ResourceCard.css';
 
 const Card1 = ({ title, description, types, symptoms, treatment, imageUrl, wikipediaUrl, isEven }) => {
   const handleCardClick = () => {
-    window.open(wikipediaUrl, '_blank');
+    window.open(wikipediaUrl, '_blank','noopener,noreferrer');
   };
 
   return (

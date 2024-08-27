@@ -59,6 +59,9 @@ const ContactDoctor = () => {
         
         <button type="submit">Send Message</button>
       </form>
+      <p>Email: <a href="mailto:supportcalmcove@gmail.com">supportcalmcove@gmail.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+      <p>Address: 123 Mental Health St, Wellness City, HC 12345</p>
     </div>
   );
 };

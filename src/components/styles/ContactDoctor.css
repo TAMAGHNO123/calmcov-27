@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+ 
 }
 
 .contact-doctor {
@@ -18,6 +19,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   margin-bottom: 40px;
+  text-align: center; /* Center the content within the container */
 }
 
 .contact-doctor h1 {
@@ -31,6 +33,7 @@
 .contact-doctor form {
   display: flex;
   flex-direction: column;
+ 
 }
 
 .contact-doctor label {
@@ -72,6 +75,7 @@
   background-color: #ff5c85; /* Darker pink on hover */
   transform: translateY(-3px); /* Lift on hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+ 
 }
 
 .contact-doctor button:active {

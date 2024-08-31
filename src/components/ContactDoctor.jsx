@@ -105,7 +105,7 @@ const ContactDoctor = () => {
         </section>
 
         <section className="professional-item">
-          <img src="/doctor1.jpeg" alt="Dr. Alice Green" />
+          <img src="/download (18).jpeg" alt="Dr. Alice Green" />
           <div>
             <h3>Dr. Alice Green</h3>
             <p>Specialty: Neuropsychology</p>
@@ -114,7 +114,7 @@ const ContactDoctor = () => {
         </section>
 
         <section className="professional-item">
-          <img src="/doctor2.jpeg" alt="Dr. Tom Blue" />
+          <img src="/images (1).jpeg" alt="Dr. Tom Blue" />
           <div>
             <h3>Dr. Tom Blue</h3>
             <p>Specialty: Addiction Medicine</p>
@@ -123,7 +123,7 @@ const ContactDoctor = () => {
         </section>
 
         <section className="professional-item">
-          <img src="/doctor3.jpeg" alt="Dr. Anna Yellow" />
+          <img src="/download (14).jpeg" alt="Dr. Anna Yellow" />
           <div>
             <h3>Dr. Anna Yellow</h3>
             <p>Specialty: Geriatric Psychiatry</p>
@@ -132,7 +132,7 @@ const ContactDoctor = () => {
         </section>
 
         <section className="professional-item">
-          <img src="/doctor4.jpeg" alt="Dr. James Violet" />
+          <img src="/download (13).jpeg" alt="Dr. James Violet" />
           <div>
             <h3>Dr. James Violet</h3>
             <p>Specialty: Occupational Therapy</p>
@@ -140,41 +140,41 @@ const ContactDoctor = () => {
           </div>
         </section>
         <section className="professional-item">
-          <img src="/doctor4.jpeg" alt="Dr. James Violet" />
+          <img src="/male_doc.jpeg" alt="Dr. James Violet" />
           <div>
-            <h3>Dr. James Violet</h3>
+            <h3>Dr. Samuel Harris</h3>
             <p>Specialty: Occupational Therapy</p>
             <p>Dr. Violet provides therapeutic support for individuals to develop, recover, or maintain daily living and work skills.</p>
           </div>
         </section>
         <section className="professional-item">
-          <img src="/doctor4.jpeg" alt="Dr. James Violet" />
+          <img src="/download (17).jpeg" alt="Dr. James Violet" />
           <div>
-            <h3>Dr. James Violet</h3>
+            <h3>Dr. Benjamin Lee</h3>
             <p>Specialty: Occupational Therapy</p>
             <p>Dr. Violet provides therapeutic support for individuals to develop, recover, or maintain daily living and work skills.</p>
           </div>
         </section>
         <section className="professional-item">
-          <img src="/doctor4.jpeg" alt="Dr. James Violet" />
+          <img src="/download (16).jpeg" alt="Dr. James Violet" />
           <div>
-            <h3>Dr. James Violet</h3>
+            <h3>Dr. John Nightingale</h3>
             <p>Specialty: Occupational Therapy</p>
             <p>Dr. Violet provides therapeutic support for individuals to develop, recover, or maintain daily living and work skills.</p>
           </div>
         </section>
         <section className="professional-item">
-          <img src="/doctor4.jpeg" alt="Dr. James Violet" />
+          <img src="/download (15).jpeg" alt="Dr. James Violet" />
           <div>
-            <h3>Dr. James Violet</h3>
+            <h3>Dr. Michael Pine</h3>
             <p>Specialty: Occupational Therapy</p>
             <p>Dr. Violet provides therapeutic support for individuals to develop, recover, or maintain daily living and work skills.</p>
           </div>
         </section>
         <section className="professional-item">
-          <img src="/doctor4.jpeg" alt="Dr. James Violet" />
+          <img src="/download (19).jpeg" alt="Dr. James Violet" />
           <div>
-            <h3>Dr. James Violet</h3>
+            <h3>Dr. Sarah Willow</h3>
             <p>Specialty: Occupational Therapy</p>
             <p>Dr. Violet provides therapeutic support for individuals to develop, recover, or maintain daily living and work skills.</p>
           </div>
